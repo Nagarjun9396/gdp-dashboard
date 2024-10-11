@@ -12,6 +12,13 @@ st.set_page_config(
 # -----------------------------------------------------------------------------
 # Declare some useful functions.
 
+hidest = """
+        <style>
+        #MainManu {visibility: hidden;}
+        footer {visibility: hidden;}
+        </style>
+        """
+    
 @st.cache_data
 def get_gdp_data():
     """Grab GDP data from a CSV file.
